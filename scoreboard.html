@@ -1,0 +1,58 @@
+<link rel="stylesheet" href="includes/css/bootstrap.min.css">
+<link rel="stylesheet" href="includes/css/main.css">
+<script src="includes/js/jquery.min.js"></script>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    <h1 class="display-3">Scoreboard</h1>  
+  </div>
+</div>
+
+<div id="scoreboard" class="container">
+    <table id="scoreboard-table" class="table table-bordered">
+        <thead class="thead-light" >
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Team</th>
+                <th scope="col">Points</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</div>
+<!-- Live score works here -->
+<script>
+    $(function() {
+
+        function getLiveScore() {
+            $.ajax({
+                method: "GET",
+                url: "evaluate.php?live_score",
+                success: function(r) {
+                    result = JSON.parse(r);
+                    output = '';
+                    i = 1;
+                    $.each(result, function(index) {
+                        output += "<tr><td>" + i + "</td><td>" + result[index].team + "</td><td>" + result[index].points + "</td></tr>";
+                        i++;
+                    });
+                    $("#scoreboard-table tbody").html(output);
+                },
+                error: function(r) {
+                    console.log(r);
+                }
+            });
+        }
+        setInterval(getLiveScore, 2000);
+
+    });
+</script>
+<!-- the scores will be refreshed every 2 secs -->
+<style type="text/css">
+  .jumbotron {
+    text-align: center;
+    color: white;
+     background: linear-gradient(to right, #83a4d4, #b6fbff);
+  }
+  </style>

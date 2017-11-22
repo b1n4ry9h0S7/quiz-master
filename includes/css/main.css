@@ -1,0 +1,161 @@
+/* Scoreboard style start */
+
+#scoreboard #scoreboard-table {
+    text-align: justify;
+    margin: auto;
+}
+
+#scoreboard #scoreboard-table tr,
+td {
+    padding: 10px;
+    margin: 10px;
+}
+
+#scoreboard #scoreboard-table th {
+    border-bottom: 1px dashed #000;
+}
+
+#scoreboard #scoreboard-table tbody tr:nth-child(1) {
+    color: red;
+}
+
+#scoreboard #scoreboard-table tbody tr:nth-child(2) {
+    color: green;
+}
+
+#scoreboard #scoreboard-table tbody tr:nth-child(3) {
+    color: blue;
+}
+
+
+/* Scoreboard style end */
+
+
+/* Team style start */
+
+#team-entry {
+    transition: 0.5s;
+    margin: 100px auto;
+    width: 50%;
+    box-shadow: 0 0 7px 0;
+}
+
+#team-entry:hover {
+    box-shadow: 0 0 15px 0;
+}
+
+#team-entry .container {
+    padding: 10px;
+}
+
+
+/* Team style end */
+
+
+/* Quiz style start */
+
+.card {
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    box-shadow: 0 0 2px 0;
+    transition: 0.3s;
+    cursor: default;
+}
+
+.card:hover {
+    box-shadow: 0 0 4px 0;
+}
+
+.card .btn {
+    margin-top: 10px;
+    max-width: 100px;
+}
+
+.card .list-group-item {
+    border: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background: #eee;
+}
+
+#timer {
+    position: fixed;
+    margin-left: calc(50% - 100px);
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1;
+    box-shadow: 0 0 7px 0px;
+    width: 200px;
+    opacity: 0.8;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+    cursor: default;
+}
+
+#timer:hover {
+    box-shadow: 0 0 10px 0px;
+}
+
+
+/* Quiz style end */
+
+
+/* Auth style start */
+
+#auth {
+    transition: 0.5s;
+    margin: 100px auto;
+    width: 50%;
+    box-shadow: 0 0 7px 0;
+}
+
+#auth:hover {
+    box-shadow: 0 0 15px 0;
+}
+
+#auth .container {
+    padding: 10px;
+}
+
+
+/* Auth style end */
+
+
+/* List questions style start */
+
+.questions .list-group-item {
+    cursor: pointer;
+    border: 0;
+}
+
+.questions a {
+    text-decoration: none;
+}
+
+.nav {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.question-delete {
+    position: absolute;
+    right: 10px;
+    opacity: 0.8;
+}
+
+.question-title {
+    word-wrap: break-word;
+}
+
+
+/* List questions style end */
+
+a {
+    align-content: left;
+}
