@@ -49,12 +49,12 @@
   .jumbotron {
 
     color: white;
-     background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+     background: linear-gradient(to right, #83a4d4, #b6fbff); 
   }
 
    /*  #bground {
    
    color: white;
-    background: linear-gradient(to right, #83a4d4, #b6fbff); Standard syntax
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
      } */
 </style>

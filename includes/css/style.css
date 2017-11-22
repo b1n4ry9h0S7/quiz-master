@@ -1,8 +1,3 @@
-<div class="container">
-  <span class="text color-text-flow">I colored outside the lines because my crayon was claustrophobic!!!</span>
-</div>
-
-<style>
 @import url(https://fonts.googleapis.com/css?family=Oxygen);
 .color-text-flow,
 .color-text-flow-hover:hover {
@@ -690,15 +685,4 @@ a {
   color: #eee;
   font-size: 15px;
   line-height: 15px;
-}	
-</style>
-
-
-
-<script>
-	$('.text').html(function(i, html) {
-  var chars = $.trim(html).split("");
-
-  return '<span>' + chars.join('</span><span>') + '</span>';
-});
-</script>
+}

@@ -1,7 +1,10 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
 <link rel="stylesheet" href="includes/css/animate.css">  
+
+
 <body id="bground" >
+
   <div class="jumbotron jumbotron-fluid">
     <h1 class="display-4 animated flipInY header
 ">Welcome to Meteor Mash</h1>      
@@ -51,7 +54,7 @@ if(isset($_POST['submit'])) {
             <input class="form-control" type="text" name="team" placeholder="Type the team name...">
           </div>
           <div class="form-group">
-            <button class="btn btn-primary" type="submit" name="submit">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" name="submit">
               Submit
             </button>
           </div>
@@ -69,5 +72,9 @@ if(isset($_POST['submit'])) {
   .jumbotron {
     text-align: center;
     background-color: white;
+  }
+
+  .card {
+    border-radius: 8px;
   }
 </style>
