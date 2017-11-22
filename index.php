@@ -1,7 +1,15 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
-  
+<link rel="stylesheet" href="includes/css/animate.css">  
 <body id="bground" >
+  <div class="jumbotron jumbotron-fluid">
+    <h1 class="display-4 animated flipInY header
+">Welcome to Meteor Mash</h1>      
+    <h3 class=" animated fadein">We hope you will enjoy the quiz!</h3>
+    <h3 class="animated fadein">Have fun! All the best!</h3>
+    <hr>
+  </div>  
+</div>
 
 <div  class="container">
 <?php
@@ -56,5 +64,10 @@ if(isset($_POST['submit'])) {
 <style type="text/css">
   #bground {
      background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+  }
+
+  .jumbotron {
+    text-align: center;
+    background-color: white;
   }
 </style>

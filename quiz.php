@@ -14,7 +14,7 @@ include('includes/DB.php');
 
 if(!isset($_SESSION['team'])) {
   echo 'Team name is not set!';
-  echo '<a href="team.php" class="btn btn-primary">Team</a>';
+  echo '<a href="index.php" class="btn btn-primary">Team</a>';
   exit();
 }
 
@@ -22,7 +22,7 @@ if(!isset($_SESSION['team'])) {
 $_SESSION['pageLoaded']++;
 if($_SESSION['pageLoaded'] > 1) {
   echo '<div class="alert alert-warning">Page reloaded. Please re enter team name</div>';
-   echo '<a href="team.php" class="btn btn-primary">Team</a>';
+   echo '<a href="index.php" class="btn btn-primary">Team</a>';
   exit();
 }
 

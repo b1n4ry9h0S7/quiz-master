@@ -11,7 +11,6 @@
      <p class="lead" >Have a nice day!</p>
   </div>
 </div>
-<hr>
 </body>
 <style type="text/css">
   .jumbotron {
