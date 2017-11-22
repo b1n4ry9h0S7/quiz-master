@@ -66,7 +66,7 @@ if(isset($_POST['submit'])) {
 </body>
 <style type="text/css">
   #bground {
-     background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+     background: linear-gradient(to right, #83a4d4, #b6fbff); 
   }
 
   .jumbotron {

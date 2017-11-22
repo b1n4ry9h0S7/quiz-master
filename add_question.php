@@ -1,11 +1,6 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
 <script src="includes/js/jquery.min.js"></script>
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-3">Add Questions</h1>
-  </div>
-</div>
 
 <div class="container">
 <?php
@@ -14,8 +9,20 @@
 
 	if(!isset($_SESSION['auth']))
   {
-		echo 'You are not authorized to view this page. Login to continue';
-    echo '<a href="auth.php">Login</a>';
+	echo '<body id="bground">';
+    echo '<div class="container">
+<div class="card" id="LT">
+<h4>You are not authorized to view this page. Login to continue</h4>
+ <a href="auth.php" class="btn btn-primary btn-block">Login</a>
+ </div>
+</div>';
+    echo '</body>';
+    echo '<style type="text/css">
+  #bground {
+     background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+  }
+</style>
+';
     exit();
   }
 ?>

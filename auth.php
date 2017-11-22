@@ -12,8 +12,25 @@
   const SECRET_KEY = "1337";
   if(isset($_SESSION['auth']))
   {
-    echo '<div class="alert alert-info">You are already authorized!<br>';
-    echo 'See a list of questions here: <a href="list_questions.php">Question list</a></div>';
+
+    echo '<body id="bground">';
+    echo '<div class="container">
+<div  id="LT">
+<div class="alert alert-info">You are already authorized!<br>
+See a list of questions here: <a class="btn btn-primary" href="list_questions.php">Question list</a>
+ </div>
+</div>';
+    echo '</body>';
+    echo '<style type="text/css">
+  #bground {
+     background: linear-gradient(to right, #83a4d4, #b6fbff);
+  }
+  .jumbotron {
+    text-align: center;
+    background-color: white;
+  }
+</style>
+';  
     exit();
   }
   if(isset($_POST['submit']))
@@ -47,8 +64,8 @@
 </body>
 <style type="text/css">
   .jumbotron {
-
-    color: white;
+      text-align: center;
+      color: white;
      background: linear-gradient(to right, #83a4d4, #b6fbff); 
   }
 

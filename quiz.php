@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
 <body id="bground">
-  
-
 <script src="includes/js/jquery.min.js"></script>
 <script src="includes/js/jquery.plugin.min.js"></script>
 <script src="includes/js/jquery.countdown.min.js"></script>
@@ -13,8 +11,20 @@ session_start();
 include('includes/DB.php');
 
 if(!isset($_SESSION['team'])) {
-  echo 'Team name is not set!';
-  echo '<a href="index.php" class="btn btn-primary">Team</a>';
+      echo '<body id="bground">';
+    echo '<div class="container">
+<div class="card" id="LT">
+<h4>Team name is not set!</h4>
+ <a href="index.php" class="btn btn-primary">Team</a>
+ </div>
+</div>';
+    echo '</body>';
+    echo '<style type="text/css">
+  #bground {
+     background: linear-gradient(to right, #83a4d4, #b6fbff); 
+  }
+</style>
+';
   exit();
 }
 
@@ -109,7 +119,7 @@ else
 </body>
 <style type="text/css">
   #bground {
-     background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+     background: linear-gradient(to right, #83a4d4, #b6fbff);
   }
   #LT {
     background-color: white;
