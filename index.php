@@ -8,11 +8,19 @@
   <div class="jumbotron jumbotron-fluid">
     <h1 class="display-4 animated flipInY header
 ">Welcome to Meteor Mash</h1>      
-    <h3 class=" animated fadein">We hope you will enjoy the quiz!</h3>
-    <h3 class="animated fadein">Have fun! All the best!</h3>
+    <h3 class=" animated fadein"><span class="ityped"></span></h3>
     <hr>
   </div>  
 </div>
+
+<script src="includes/js/ityped.js"></script>
+  <script>
+    window.ityped.init(document.querySelector('.ityped'), {
+            strings : ['We hope you will enjoy the quiz!', 'Have fun! All the best!'],
+            loop : true
+        });
+  </script>
+
 
 <div  class="container">
 <?php
