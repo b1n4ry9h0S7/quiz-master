@@ -1,6 +1,12 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
 <script src="includes/js/jquery.min.js"></script>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Edit Questions</h1>
+  </div>
+</div>
+
 <body id="bground">
 <div class="container">
 <?php
@@ -145,7 +151,9 @@
 </body>
 
 <style type="text/css">
-  #bground {
-     background: linear-gradient(to right, #83a4d4, #b6fbff); 
+   .jumbotron {
+    text-align: center;
+    color: white;
+     background: linear-gradient(to right, #83a4d4, #b6fbff);
   }
 </style>

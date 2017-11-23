@@ -2,6 +2,12 @@
 <link rel="stylesheet" href="includes/css/main.css">
 <script src="includes/js/jquery.min.js"></script>
 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Add Questions</h1>
+  </div>
+</div>
+
 <div class="container">
 <?php
 	session_start();
@@ -125,9 +131,9 @@
 ?>
 </div>
 <style type="text/css">
-  .jumbotron {
+   .jumbotron {
     text-align: center;
     color: white;
      background: linear-gradient(to right, #83a4d4, #b6fbff);
   }
-  </style>
+</style>

@@ -69,6 +69,9 @@ See a list of questions here: <a class="btn btn-primary" href="list_questions.ph
      background: linear-gradient(to right, #83a4d4, #b6fbff); 
   }
 
+.card {
+    border-radius: 8px;
+  }
    /*  #bground {
    
    color: white;

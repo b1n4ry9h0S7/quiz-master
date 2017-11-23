@@ -1,11 +1,13 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
+<link rel="stylesheet" href="includes/css/animate.css"> 
+
 <!-- Last Page to be Displayed -->
 
 <body id="bground">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-3">Thanks for playing!</h1>
+    <h1 class="display-3 animated tada">Thanks for playing!</h1>
     <p class="lead"><span class="ityped"></span></p>
     <hr>
      <p class="lead" >Have a nice day!</p>

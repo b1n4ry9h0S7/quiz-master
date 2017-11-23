@@ -1,10 +1,14 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
+
+
 <body id="bground">
 <script src="includes/js/jquery.min.js"></script>
 <script src="includes/js/jquery.plugin.min.js"></script>
 <script src="includes/js/jquery.countdown.min.js"></script>
-<div class="badge badge-pill badge-light" id="timer"></div>
+<div class="badge badge-pill badge-success" id="timer"></div>
+
+
 <div class="container">
 <?php
 session_start();
@@ -31,10 +35,36 @@ if(!isset($_SESSION['team'])) {
 
 $_SESSION['pageLoaded']++;
 if($_SESSION['pageLoaded'] > 1) {
-  echo '<div class="alert alert-warning">Page reloaded. Please re enter team name</div>';
-   echo '<a href="index.php" class="btn btn-primary">Team</a>';
+         echo '<body id="bground">';
+    echo '<div class="container">
+    <div class="card">
+<div class="alert alert-warning">Page reloaded. Please re enter team name</div>
+ <a href="index.php" class="btn btn-primary">Team</a>
+</div>
+</div>';
+    echo '</body>';
+    echo '<style type="text/css">
+  #bground {
+     background: linear-gradient(to right, #83a4d4, #b6fbff); 
+  }
+</style>
+';
+
   exit();
 }
+
+if(!isset($_COOKIE['team_name'])) {
+     echo'
+    <div id="TPlace" class="card text-center">
+    <h3>Do Well!</h3>
+</div>';
+} else {
+     echo'
+    <div id="TPlace" class="card text-center">
+    <h1><span id="TName">Team '. $_COOKIE['team_name'] .'</span></h1>
+</div>';
+}
+
 
 $questions = DB::query("SELECT * FROM questions");
 if($questions)
@@ -125,4 +155,42 @@ else
     background-color: white;
     align-items: center;
   }
+  .card {
+    border-radius: 8px;
+  }
+
+  #TPlace {
+    font-family: "Times New Roman", Times, serif;
+        background: linear-gradient(to right,#232526, #414345);
+
+  }
+
+  #TName {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        color: transparent;
+        text-transform: uppercase;
+        background-image: linear-gradient(to right,#f00,#ff0,#0ff,#0f0,#00f);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        /* -webkit-background-clip:text; */
+        animation: animate 15s linear infinite;
+        background-size: 1000%;
+    }
+    @keyframes animate
+    {
+        0%
+        {
+            background-position: 0% 100%;
+        }
+        50%
+        {
+            background-position: 100% 0%;
+        }
+        100%
+        {
+            background-position: 0% 100%;
+        }
+    }
 </style>

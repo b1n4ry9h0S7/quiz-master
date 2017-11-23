@@ -14,8 +14,20 @@
 
   if(!isset($_SESSION['auth']))
   {
-    echo '<div class="alert alert-warning">You are not authorized to view this page. Login to continue';
-    echo '&nbsp;<a href="auth.php">Login</a></div>';
+   echo '<body id="bground">';
+    echo '<div class="container">
+<div class="card" id="LT">
+<h4>You are not authorized to view this page. Login to continue</h4>
+ <a href="auth.php" class="btn btn-primary btn-block">Login</a>
+ </div>
+</div>';
+    echo '</body>';
+    echo '<style type="text/css">
+  #bground {
+     background: linear-gradient(to right, #83a4d4, #b6fbff); /* Standard syntax */
+  }
+</style>
+';
     exit();
   }
   /*Delete Questions*/
