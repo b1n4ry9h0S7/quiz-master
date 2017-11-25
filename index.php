@@ -8,7 +8,7 @@
   <div class="jumbotron jumbotron-fluid">
     <h1 class="display-4 animated flipInY header
 ">Welcome to <span id="Mmash">Meteor Mash</span></h1>      
-    <h3 class=" animated fadein"><span class="ityped"></span></h3>
+    <h3><span class="ityped"></span></h3>
     <hr>
   </div>  
 </div>
@@ -73,6 +73,21 @@ if(isset($_POST['submit'])) {
       </div>
     </div>
   </div>
+
+<div class="card">
+  <div class="card-header">
+    <b>Rules:</b>
+  </div>
+  <div class="card-block">
+    <p>
+      <pre>  1. There is 20 minutes time limit.
+  2. Candidates must try to answer all 30 questions.
+  3. All participants must enter proper team name.
+  4. Quiz masters decision is final.</pre></p>
+  </div>
+</div>
+
+
 </div>
 </body>
 <style type="text/css">
@@ -84,27 +99,19 @@ if(isset($_POST['submit'])) {
     text-align: center;
     background-color: white;
   }
+  pre {
+    font-family: "Times New Roman" , Times, sans-serif;
+    font-size: 20px;
+  }
+
+  .card-header {
+      font-family: "Times New Roman" , Times, sans-serif;
+    font-size: 20px;
+  }
 
   .card {
     border-radius: 8px;
   }
-
-/* 
-         {
-        margin: 0;
-        padding: 0;
-        font-family:FreeMono, monospace ;
-
-    } */
-
-    /*  {
-       width: 100%;
-       padding: 10px;
-       margin: 10%;
-       background: linear-gradient(to right,#232526, #414345);
-       padding-left: 10px;
-       border-radius: 10px;
-        } */
     #Mmash {
         margin: 0;
         padding: 0;
