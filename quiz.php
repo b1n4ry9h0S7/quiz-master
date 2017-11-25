@@ -6,7 +6,7 @@
 <script src="includes/js/jquery.min.js"></script>
 <script src="includes/js/jquery.plugin.min.js"></script>
 <script src="includes/js/jquery.countdown.min.js"></script>
-<div class="badge badge-pill badge-success" id="timer"></div>
+<div class="badge badge-pill" id="timer"></div>
 
 
 <div class="container">
@@ -74,25 +74,38 @@ if($questions)
     <div class="question card">
       <!-- Question number -->
       <h2><?php echo $i+1 . '. ' . ucfirst($r['question']); ?></h2>
+      <hr>
       <div class="list-group">
+        <div class="row">
+          <div class="col">
         <label class="list-group-item">
           <input type="radio" name="<?php echo $r['id']; ?>" value="<?php echo strtolower($r['option1']); ?>" />
           <?php echo ucwords($r['option1']); ?>
         </label><br>
+      </div>
+      <div class="col">
         <label class="list-group-item">
           <input type="radio" name="<?php echo $r['id']; ?>" value="<?php echo strtolower($r['option2']); ?>"/>
           <?php echo ucwords($r['option2']); ?>
         </label><br>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col">
         <label class="list-group-item">
           <input type="radio" name="<?php echo $r['id']; ?>" value="<?php echo strtolower($r['option3']); ?>"/>
           <?php echo ucwords($r['option3']); ?>
         </label><br>
+      </div>
+      <div class="col">
         <label class="list-group-item">
           <input type="radio" name="<?php echo $r['id']; ?>" value="<?php echo strtolower($r['option4']); ?>"/>
           <?php echo ucwords($r['option4']); ?>
         </label><br>
-        
       </div>
+    </div>
+      </div>
+      <hr>
       <!-- Load different submit buttons with question id for different questions -->
         <input class="btn btn-info submitAnswer" type="submit" name="<?php echo $r['id']; ?>" value="Submit">
     </div>
@@ -148,6 +161,18 @@ else
 </div>
 </body>
 <style type="text/css">
+
+
+h2,label,h3 {
+  font-family: "Times New Roman", san-serif;
+}
+
+h2 {
+  font-size: 25px;
+}
+label {
+  font-size: 18px;
+}
   #bground {
      background: linear-gradient(to right, #83a4d4, #b6fbff);
   }
@@ -156,8 +181,24 @@ else
     align-items: center;
   }
   .card {
-    border-radius: 8px;
+    border-radius: 5px;
   }
+
+  .list-group-item:hover {
+    background:  #b6d8fc;
+}
+
+.list-group-item {
+    border-radius: 5px;
+}
+
+#timer {
+      background: white;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    opacity: 0.7;
+}
 
   #TPlace {
     font-family: "Times New Roman", Times, serif;
@@ -166,8 +207,6 @@ else
   }
 
   #TName {
-        margin: 0;
-        padding: 0;
         text-align: center;
         color: transparent;
         text-transform: uppercase;

@@ -1,59 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>clr</title>
-    <link rel="stylesheet" href="includes/css/bootstrap.min.css">
-</head>
+
 <body>
-    <div class="container">
-    <h1>Hello World</h1>
-</div>
+<div class="badge badge-pill" id="timer"></div>
 </body>
-</html>
-
 <style>
-/* @import url('https://fonts.googleapis.com/css?family=Raleway'); */
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: "Times New Roman", Times, serif;
-
+body {
+        background: #eee;
     }
 
-    .container {
-        width: 100%;
-        padding: 10px;
-        margin: 10%;
-        background: linear-gradient(to right,#232526, #414345);
-        padding-left: 10px;
-        border-radius: 10px;
-    }
-    h1 {
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        color: transparent;
-        text-transform: uppercase;
-        background-image: linear-gradient(to right,#f00,#ff0,#0ff,#0f0,#00f);
-        -webkit-background-clip: text;
-        /* -webkit-background-clip:text; */
-        animation: animate 15s linear infinite;
-        background-size: 1000%;
-    }
-    @keyframes animate
-    {
-        0%
-        {
-            background-position: 0% 100%;
-        }
-        50%
-        {
-            background-position: 100% 0%;
-        }
-        100%
-        {
-            background-position: 0% 100%;
-        }
-    }
+#timer {
+    position: fixed;
+    padding: 10px;
+    font-size: 24px;
+    z-index: 1;
+    box-shadow: 0 0 7px 0px;
+    width: 200px;
+    background: black;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: red;
+    border-width: 5px;
+    opacity: 0.3;
+    transition: 0.5s;
+    cursor: default;
+}
+
+#timer:hover {
+    box-shadow: 0 0 10px 0px;
+} 
 </style>
