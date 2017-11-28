@@ -107,7 +107,7 @@ if($questions)
       </div>
       <hr>
       <!-- Load different submit buttons with question id for different questions -->
-        <input class="btn btn-info submitAnswer" type="submit" name="<?php echo $r['id']; ?>" value="Submit">
+        <!-- <input class="btn btn-info submitAnswer" type="submit" name="<?php echo $r['id']; ?>" value="Submit"> -->
     </div>
 <?php
   endforeach;
@@ -123,7 +123,7 @@ else
     $('.submitAnswer').click(function(evt){
       console.log($(this).attr('name'));
       $(this).attr('disabled', 'disabled');
-      $(this).parent().find('input').attr('disabled', 'disabled');
+      $(this).closest('.list-group').find('input').attr('disabled', 'disabled');
       $.ajax({
         method: "POST",
         cache: false,

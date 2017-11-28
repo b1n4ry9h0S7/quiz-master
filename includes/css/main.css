@@ -83,11 +83,6 @@ td {
     background: #096fdc;
 }
 
-.list-group-item {
-    background: #2389f6;
-    box-shadow: 5px;
-}
-
 #timer {
     position: fixed;
     margin-left: calc(50% - 100px);
