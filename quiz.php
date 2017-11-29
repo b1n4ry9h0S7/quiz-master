@@ -120,7 +120,7 @@ else
 </div>
 <script>
   $(function() {
-    $('.submitAnswer').click(function(evt){
+    $('.question :input[type="radio"]').click(function(evt){
       console.log($(this).attr('name'));
       $(this).attr('disabled', 'disabled');
       $(this).closest('.list-group').find('input').attr('disabled', 'disabled');
