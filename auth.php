@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
+
+<head>
+  <title>Auth</title>
+</head>
+
 <body id="bground">
 <div class="jumbotron jumbotron-fluid">
   <div class="container">

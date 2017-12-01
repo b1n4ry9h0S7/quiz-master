@@ -1,6 +1,9 @@
 <link rel="stylesheet" href="includes/css/bootstrap.min.css">
 <link rel="stylesheet" href="includes/css/main.css">
 
+<head>
+  <title>Meteor Mash</title>
+</head>
 
 <body id="bground">
 <script src="includes/js/jquery.min.js"></script>

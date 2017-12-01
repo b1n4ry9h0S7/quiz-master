@@ -2,6 +2,11 @@
 <link rel="stylesheet" href="includes/css/main.css">
 <script src="includes/js/jquery.min.js"></script>
 
+<head>
+  <title>Add Questions</title>
+</head>
+
+
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-3">Add Questions</h1>

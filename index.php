@@ -2,7 +2,9 @@
 <link rel="stylesheet" href="includes/css/main.css">
 <link rel="stylesheet" href="includes/css/animate.css">  
 
-
+<head>
+  <title>Meteor Mash</title>
+</head>
 <body id="bground" >
 
   <div class="jumbotron jumbotron-fluid">
